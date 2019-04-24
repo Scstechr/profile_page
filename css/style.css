@@ -120,7 +120,7 @@ header {
 main {
   padding: 14rem;
   padding-top: 2em;
-  min-height: calc(100vh - 40px); }
+  height: calc(100vh - 40px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -149,16 +149,13 @@ main {
 .about-info {
   padding: 3rem;
   display: grid;
-  grid-template-areas: 'pic-info name name' 'bio bio bio' 'col-1 col-2 col-3';
+  grid-template-areas: 'pic-info name name' 'col-1 col-2 col-3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .pic-info {
     width: 50%;
     text-align: right;
     margin-top: 8vh;
     padding-right: 3rem; }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1.5rem; }
   .about-info .col-1 {
     grid-area: col-1; }
   .about-info .col-2 {
@@ -166,8 +163,10 @@ main {
   .about-info .col-3 {
     grid-area: col-3; }
   .about-info .content {
+    text-align: left;
+    font-size: 1.5rem;
     background: #515151;
-    padding: 2rem;
+    padding: 1rem;
     margin: 0.5rem;
     margin-top: 1rem;
     border-top: #1fabe6 5px solid; }
